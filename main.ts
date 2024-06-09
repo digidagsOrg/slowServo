@@ -50,7 +50,7 @@ namespace myExtension {
 
      
 		
-        if (direction == ServoDirection.CW) {
+        if (direction == ServoDirection.CCW) {
             // CW - im Uhrzeigersinn
             for (let index = 0; index <= tiks; index++) {
                 Aposition = Aposition + 1
