@@ -88,7 +88,7 @@ namespace ServoSlow {
     //% color=#00A654
     //% servoSelection.min=1 servoSelection.max=3 servoSelection.defl=1
     //% newPosition.min=0 newPosition.max=180 newPosition.defl=90
-    /*
+    
     export function setServoPosition(servoSelection: number, newPosition: number): void {
         let servoPin: AnalogPin
         if (servoSelection == 1) {
@@ -105,7 +105,7 @@ namespace ServoSlow {
         // Setze die Servo-Position direkt
         pins.servoWritePin(servoPin, newPosition)
     }
-	*/
+	
     
 }
 
