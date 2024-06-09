@@ -23,7 +23,7 @@ namespace ServoSlow {
 
     //% group="180 Servo Slow"
     //% blockId=kitronik_simple_servo_angle_slow
-    //% block="set servo %servoSelection|tiks %tiks|speed %Aspeed|position %Aposition|direction %direction"
+    //% block="set servo %servoSelection|tiks %tiks|speed %Aspeed|STARTposition %Aposition|direction %direction"
     //% inlineInputMode=inline
     //% color=#00A654
     //% tiks.min=0 tiks.max=180 tiks.defl=90
