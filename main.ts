@@ -81,6 +81,19 @@ namespace ServoSlow {
         return Aposition;
     }
     
+    // Neuen Block hinzufügen, um Aposition zu setzen
+    //% blockId=set_servo_position
+    //% block="set servo position to %newPosition"
+    //% inlineInputMode=inline
+    //% color=#00A654
+    //% newPosition.min=0 newPosition.max=180 newPosition.defl=90
+    export function setServoPosition(newPosition: number): void {
+        if (newPosition > 180) newPosition = 180
+        if (newPosition < 0) newPosition = 0
+        // Setze die Servo-Position direkt
+        pins.servoWritePin(AnalogPin.P8, newPosition) // Anpassen je nach gewünschtem Pin
+    }
+    
 }
 
 
