@@ -74,29 +74,17 @@ namespace myExtension {
             }
         }
 		//servoStop(servoSelection)
-		pins.digitalWritePin(DigitalPin.P8, 0)
+		
+		if (servoSelection == 1) {
+           pins.digitalWritePin(DigitalPin.P8, 0)
+        } else if (servoSelection == 2) {
+           pins.digitalWritePin(DigitalPin.P15, 0)
+        } else if (servoSelection == 3) {
+           pins.digitalWritePin(DigitalPin.P16, 0)
+        }
         return Aposition;
     }
     
-    /**
-     * Stop the selected servo moving
-     * @param servoSelection is the selection of the servo to control
-     */
-    //% blockId=kitronik_simple_servo_stop
-    //% block="stop servo %servoSelection"
-    //% color=#00A654
-    //% weight=100 blockGap=8
-    export function servoStop(servoSelection: ServoChoice) {
-        if (servoSelection == ServoChoice.servo1){
-            pins.digitalWritePin(DigitalPin.P8, 0)
-        }
-        else if (servoSelection == ServoChoice.servo2){
-            pins.digitalWritePin(DigitalPin.P15, 0)
-        }
-        else if (servoSelection == ServoChoice.servo3){
-            pins.digitalWritePin(DigitalPin.P16, 0)
-        } 
-    }
 }
 
 
