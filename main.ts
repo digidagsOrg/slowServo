@@ -73,7 +73,8 @@ namespace myExtension {
                 }
             }
         }
-		servoStop(servoSelection)
+		//servoStop(servoSelection)
+		pins.digitalWritePin(DigitalPin.P8, 0)
         return Aposition;
     }
     
