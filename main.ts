@@ -73,7 +73,7 @@ namespace myExtension {
                 }
             }
         }
-		//pins.servoWritePin(servoPin, 0)  // Servo anhalten
+		pins.servoWritePin(servoPin, 0)  // Servo anhalten
         return Aposition;
     }
 }
