@@ -48,8 +48,7 @@ namespace myExtension {
         if (Aposition > 180) Aposition = 180
         if (Aposition < 0) Aposition = 0
 
-        // Hier kommt die Implementierung des Servomotors
-        pins.servoWritePin(servoPin, Aposition)
+     
 		
         if (direction == ServoDirection.CW) {
             // CW - im Uhrzeigersinn
