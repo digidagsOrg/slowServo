@@ -32,7 +32,7 @@ namespace myExtension {
     //% Aposition.min=0 Aposition.max=180 Aposition.defl=90
     //% direction.defl=myExtension.ServoDirection.CW
     //% weight=100 blockGap=8
-    export function setServoAngle(servoSelection: number, tiks: number, Aspeed: number, Aposition: number, direction: ServoDirection): void {
+    export function setServoAngle(servoSelection: number, tiks: number, Aspeed: number, Aposition: number, direction: ServoDirection): number {
         let servoPin: AnalogPin
         if (servoSelection == 1) {
             servoPin = AnalogPin.P8
@@ -72,7 +72,10 @@ namespace myExtension {
                 }
             }
         }
+
+        return Aposition;
     }
 }
+
 
 
