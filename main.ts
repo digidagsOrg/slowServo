@@ -1,5 +1,5 @@
 //% weight=100 color=#0fbc11 icon="\uf0eb"
-namespace myExtension {
+namespace ServoSlow {
    
     export enum ServoChoice {
         //% block="1"
@@ -51,29 +51,25 @@ namespace myExtension {
      
 		
         if (direction == ServoDirection.CCW) {
-            // CW - im Uhrzeigersinn
             for (let index = 0; index <= tiks; index++) {
                 Aposition = Aposition + 1
                 pins.servoWritePin(servoPin, Aposition)
                 basic.pause(Aspeed)
                 if (Aposition >= 180) {
-					//pins.servoWritePin(servoPin, 0)  // Servo anhalten
-                    break;
+					break;
                 }
             }
         } else {
-            // CCW - gegen den Uhrzeigersinn
-            for (let index = 0; index <= tiks; index++) {
+           for (let index = 0; index <= tiks; index++) {
                 Aposition = Aposition - 1
                 pins.servoWritePin(servoPin, Aposition)
                 basic.pause(Aspeed)
                 if (Aposition <= 0) {
-					//pins.servoWritePin(servoPin, 0)  // Servo anhalten
-                    break;
+					break;
                 }
             }
         }
-		//servoStop(servoSelection)
+		
 		
 		if (servoSelection == 1) {
            pins.digitalWritePin(DigitalPin.P8, 0)
