@@ -1,6 +1,6 @@
 //% weight=100 color=#0fbc11 icon="\uf0eb"
 namespace myExtension {
-    //% block
+   
     export enum ServoChoice {
         //% block="1"
         servo1,
