@@ -49,7 +49,7 @@ namespace myExtension {
 
         // Hier kommt die Implementierung des Servomotors
         pins.servoWritePin(servoPin, Aposition)
-
+		/*
         for (let Index = 0; Index <= tiks; Index++) {
             Aposition = Aposition + 1
             pins.servoWritePin(servoPin, Aposition)
@@ -58,6 +58,7 @@ namespace myExtension {
                 break;
             }
         }
+        */
     }
 }
 
