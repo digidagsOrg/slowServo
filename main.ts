@@ -57,6 +57,7 @@ namespace myExtension {
                 pins.servoWritePin(servoPin, Aposition)
                 basic.pause(Aspeed)
                 if (Aposition >= 180) {
+					//pins.servoWritePin(servoPin, 0)  // Servo anhalten
                     break;
                 }
             }
@@ -67,11 +68,12 @@ namespace myExtension {
                 pins.servoWritePin(servoPin, Aposition)
                 basic.pause(Aspeed)
                 if (Aposition <= 0) {
+					//pins.servoWritePin(servoPin, 0)  // Servo anhalten
                     break;
                 }
             }
         }
-
+		pins.servoWritePin(servoPin, 0)  // Servo anhalten
         return Aposition;
     }
 }
